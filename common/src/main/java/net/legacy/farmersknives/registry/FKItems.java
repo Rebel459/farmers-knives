@@ -323,6 +323,12 @@ public class FKItems {
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
+            RegistrySupplier<Item> TIDESINGER_KNIFE = ITEMS.register(
+                    "stormyx_knife", () -> FKPlatform.createKnifeItem(FKTiers.TIDESINGER,
+                            new Item.Properties()
+                                    .stacksTo(1)
+                                    .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
+                    ));
         }
 
         if (Platform.isModLoaded("progression_reborn")) {

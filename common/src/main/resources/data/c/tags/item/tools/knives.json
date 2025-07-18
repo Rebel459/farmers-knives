@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     {
-      "id": "#farmersdelight:tools/knives",
+      "id": "#farmersknives:knives",
       "required": false
     }
   ]
