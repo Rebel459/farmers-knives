@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "Farmer's Knives"
 authors = "Rebel459"
 description = '''
-Adds Knives to Farmer's Delight Reforged for many other mods
+Adds Knives to Farmer's Delight for many other mods
 '''
 #logoFile = ""
 
