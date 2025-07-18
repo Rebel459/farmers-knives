@@ -3,10 +3,10 @@ package net.legacy.farmersknives.registry;
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
-import net.legacy.farmersknives.FarmersKnives;
 import net.legacy.farmersknives.FKPlatform;
+import net.legacy.farmersknives.FarmersKnives;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
 
 public class FKItems {
 
@@ -347,6 +347,21 @@ public class FKItems {
                     ));
             RegistrySupplier<Item> KNIGHTMETAL_KNIFE = ITEMS.register(
                     "knightmetal_knife", () -> FKPlatform.createKnifeItem(FKTiers.KNIGHTMETAL,
+                            new Item.Properties()
+                                    .stacksTo(1)
+                                    .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
+                    ));
+        }
+
+        if (Platform.isModLoaded("progression_reborn")) {
+            RegistrySupplier<Item> COPPER_KNIFE = ITEMS.register(
+                    "copper_knife", () -> FKPlatform.createKnifeItem(FKTiers.COPPER,
+                            new Item.Properties()
+                                    .stacksTo(1)
+                                    .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
+                    ));
+            RegistrySupplier<Item> ROSE_KNIFE = ITEMS.register(
+                    "rose_knife", () -> FKPlatform.createKnifeItem(FKTiers.ROSE,
                             new Item.Properties()
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)

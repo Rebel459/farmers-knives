@@ -3,15 +3,14 @@
   "id": "farmersknives",
   "version": "${version}",
   "name": "Farmer's Knives",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Adds Knives to Farmer's Delight Refabricated for many other mods",
   "authors": [
-    "Me!"
+    "Rebel459"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Rebel459/farmers-knives"
   },
-  "license": "CC0-1.0",
+  "license": "LGPL-3.0 Only",
   "icon": "assets/farmersknives/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -31,8 +30,5 @@
     "java": ">=21",
     "architectury": ">=13.0.8",
     "fabric-api": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }

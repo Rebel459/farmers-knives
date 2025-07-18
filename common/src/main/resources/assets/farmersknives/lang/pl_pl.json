@@ -1,7 +1,4 @@
 {
-  "item.farmersknives.rose_gold_knife": "Różowo Złoty Nóż",
-  "item.farmersknives.gilded_netherite_knife": "Pozłacany Netherytowy Nóż",
-
   "item.farmersknives.aeternium_knife": "Eternytowy Nóż",
   "item.farmersknives.thallasium_knife": "Tallaziowy Nóż",
   "item.farmersknives.terminite_knife": "Terminatowy Nóż",
@@ -15,7 +12,7 @@
   "item.farmersknives.emerald_knife": "Szmaragdowy Nóż",
   "item.farmersknives.ruby_knife": "Rubinowy Nóż",
   "item.farmersknives.amethyst_knife": "Ametystowy Nóż",
-  "item.farmersknives.steel_knife": "Stalowy Nóż",
+  "item.farmersknives.steel_knife_et": "Stalowy Nóż",
   "item.farmersknives.obsidian_knife": "Obsydianowy Nóż",
   "item.farmersknives.copper_knife": "Miedziany Nóż"
 }

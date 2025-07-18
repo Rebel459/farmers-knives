@@ -1,15 +1,15 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/Rebel459/farmers-knives/issues"
+license = "LGPL-3.0 Only"
 
 [[mods]]
 modId = "farmersknives"
 version = "${version}"
 displayName = "Farmer's Knives"
-authors = "Me!"
+authors = "Rebel459"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Adds Knives to Farmer's Delight Reforged for many other mods
 '''
 #logoFile = ""
 
