@@ -12,6 +12,9 @@ public class FKItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(FarmersKnives.MOD_ID, Registries.ITEM);
 
+    public static float knifeAttackDamage = 0.5F;
+    public static float knifeAttackSpeed = -1.8F;
+
     public static final RegistrySupplier<Item> CREATIVE_TAB_KNIFE = ITEMS.register(
             "creative_tab_knife", () -> new Item(
                     new Item.Properties()
@@ -23,36 +26,40 @@ public class FKItems {
 
         if (Platform.isModLoaded("advancednetherite")) {
             RegistrySupplier<Item> NETHERITE_IRON_KNIFE = ITEMS.register(
-                    "netherite_iron_knife", () -> FKPlatform.createKnifeItem(FKTiers.NETHERITE_IRON,
+                    "netherite_iron_knife", () -> FKPlatform.createKnifeItem(
                             new Item.Properties()
+                                    .attributes(FKPlatform.getKnifeItem(FKToolMaterial.NETHERITE_IRON, knifeAttackDamage, knifeAttackSpeed))
                                     .stacksTo(1)
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
             RegistrySupplier<Item> NETHERITE_GOLD_KNIFE = ITEMS.register(
-                    "netherite_gold_knife", () -> FKPlatform.createKnifeItem(FKTiers.NETHERITE_GOLD,
+                    "netherite_gold_knife", () -> FKPlatform.createKnifeItem(
                             new Item.Properties()
+                                    .attributes(FKPlatform.getKnifeItem(FKToolMaterial.NETHERITE_GOLD, knifeAttackDamage, knifeAttackSpeed))
                                     .stacksTo(1)
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
             RegistrySupplier<Item> NETHERITE_EMERALD_KNIFE = ITEMS.register(
-                    "netherite_emerald_knife", () -> FKPlatform.createKnifeItem(FKTiers.NETHERITE_EMERALD,
+                    "netherite_emerald_knife", () -> FKPlatform.createKnifeItem(
                             new Item.Properties()
+                                    .attributes(FKPlatform.getKnifeItem(FKToolMaterial.NETHERITE_EMERALD, knifeAttackDamage, knifeAttackSpeed))
                                     .stacksTo(1)
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
             RegistrySupplier<Item> NETHERITE_DIAMOND_KNIFE = ITEMS.register(
-                    "netherite_diamond_knife", () -> FKPlatform.createKnifeItem(FKTiers.NETHERITE_DIAMOND,
+                    "netherite_diamond_knife", () -> FKPlatform.createKnifeItem(
                             new Item.Properties()
+                                    .attributes(FKPlatform.getKnifeItem(FKToolMaterial.NETHERITE_DIAMOND, knifeAttackDamage, knifeAttackSpeed))
                                     .stacksTo(1)
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
         }
 
-        if (Platform.isModLoaded("betterend")) {
+/*        if (Platform.isModLoaded("betterend")) {
             RegistrySupplier<Item> AETERNIUM_KNIFE = ITEMS.register(
                     "aeternium_knife", () -> FKPlatform.createKnifeItem(FKTiers.AETERNIUM,
                             new Item.Properties()
@@ -71,9 +78,9 @@ public class FKItems {
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
-        }
+        }*/
 
-        if (Platform.isModLoaded("betternether")) {
+/*        if (Platform.isModLoaded("betternether")) {
             RegistrySupplier<Item> CINCINNASITE_KNIFE = ITEMS.register(
                     "cincinnasite_knife", () -> FKPlatform.createKnifeItem(FKTiers.CINCINNASITE,
                             new Item.Properties()
@@ -95,9 +102,9 @@ public class FKItems {
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
-        }
+        }*/
 
-        if (Platform.isModLoaded("deeperdarker")) {
+/*        if (Platform.isModLoaded("deeperdarker")) {
             RegistrySupplier<Item> WARDEN_KNIFE = ITEMS.register(
                     "warden_knife", () -> FKPlatform.createKnifeItem(FKTiers.WARDEN,
                             new Item.Properties()
@@ -105,9 +112,9 @@ public class FKItems {
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
-        }
+        }*/
 
-        if (Platform.isModLoaded("dragonloot")) {
+/*        if (Platform.isModLoaded("dragonloot")) {
             RegistrySupplier<Item> DRAGON_KNIFE = ITEMS.register(
                     "dragon_knife", () -> FKPlatform.createKnifeItem(FKTiers.DRAGON,
                             new Item.Properties()
@@ -115,9 +122,9 @@ public class FKItems {
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
-        }
+        }*/
 
-        if (Platform.isModLoaded("emerald_tools")) {
+/*        if (Platform.isModLoaded("emerald_tools")) {
             RegistrySupplier<Item> EMERALD_KNIFE = ITEMS.register(
                     "emerald_knife", () -> FKPlatform.createKnifeItem(FKTiers.EMERALD,
                             new Item.Properties()
@@ -154,19 +161,20 @@ public class FKItems {
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
-        }
+        }*/
 
         if (Platform.isModLoaded("enderitemod")) {
             RegistrySupplier<Item> ENDERITE_KNIFE = ITEMS.register(
-                    "enderite_knife", () -> FKPlatform.createKnifeItem(FKTiers.ENDERITE,
+                    "enderite_knife", () -> FKPlatform.createKnifeItem(
                             new Item.Properties()
+                                    .attributes(FKPlatform.getKnifeItem(FKToolMaterial.ENDERITE, knifeAttackDamage, knifeAttackSpeed))
                                     .stacksTo(1)
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB))
             );
         }
 
-        if (Platform.isModLoaded("gobber2")) {
+/*        if (Platform.isModLoaded("gobber2")) {
             RegistrySupplier<Item> GOBBER_KNIFE = ITEMS.register(
                     "gobber_knife", () -> FKPlatform.createKnifeItem(FKTiers.GOBBER,
                             new Item.Properties()
@@ -188,8 +196,9 @@ public class FKItems {
                                     .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
-        }
-        if (Platform.isModLoaded("mythicmetals")) {
+        }*/
+
+/*        if (Platform.isModLoaded("mythicmetals")) {
             RegistrySupplier<Item> ADAMANTITE_KNIFE = ITEMS.register(
                     "adamantite_knife", () -> FKPlatform.createKnifeItem(FKTiers.ADAMANTITE,
                             new Item.Properties()
@@ -329,24 +338,26 @@ public class FKItems {
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
-        }
+        }*/
 
         if (Platform.isModLoaded("progression_reborn")) {
             RegistrySupplier<Item> COPPER_KNIFE = ITEMS.register(
-                    "copper_knife", () -> FKPlatform.createKnifeItem(FKTiers.COPPER,
+                    "copper_knife", () -> FKPlatform.createKnifeItem(
                             new Item.Properties()
+                                    .attributes(FKPlatform.getKnifeItem(FKToolMaterial.COPPER, knifeAttackDamage, knifeAttackSpeed))
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
             RegistrySupplier<Item> ROSE_KNIFE = ITEMS.register(
-                    "rose_knife", () -> FKPlatform.createKnifeItem(FKTiers.ROSE,
+                    "rose_knife", () -> FKPlatform.createKnifeItem(
                             new Item.Properties()
+                                    .attributes(FKPlatform.getKnifeItem(FKToolMaterial.ROSE, knifeAttackDamage, knifeAttackSpeed))
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
         }
 
-        if (Platform.isModLoaded("twilightforest")) {
+/*        if (Platform.isModLoaded("twilightforest")) {
             RegistrySupplier<Item> IRONWOOD_KNIFE = ITEMS.register(
                     "ironwood_knife", () -> FKPlatform.createKnifeItem(FKTiers.IRONWOOD,
                             new Item.Properties()
@@ -373,6 +384,6 @@ public class FKItems {
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
-        }
+        }*/
     }
 }

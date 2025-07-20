@@ -1,12 +1,16 @@
 package net.legacy.farmersknives.fabric;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tier;
-import vectorwing.farmersdelight.common.registry.ModCreativeTabs;
+import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
+import vectorwing.farmersdelight.common.item.KnifeItem;
 
 public class FKPlatformImpl {
-    public static Item createKnifeItem(Tier tier, Item.Properties properties) {
-        return new net.legacy.farmersknives.fabric.item.KnifeItemFabric(tier, properties);
+    public static Item createKnifeItem(Item.Properties properties) {
+        return new net.legacy.farmersknives.fabric.item.KnifeItemFabric(properties);
+    }
+
+    public static ItemAttributeModifiers getKnifeItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed) {
+        return KnifeItem.createAttributes(toolMaterial, attackDamage, attackSpeed);
     }
 }

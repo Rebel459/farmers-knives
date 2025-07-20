@@ -1,10 +1,10 @@
 package net.legacy.farmersknives.neoforge.item;
 
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Item;
 import vectorwing.farmersdelight.common.item.KnifeItem;
 
 public class KnifeItemNeoForge extends KnifeItem {
-    public KnifeItemNeoForge(Tier tier, Properties properties) {
-        super(tier, properties);
+    public KnifeItemNeoForge(Item.Properties properties) {
+        super(properties);
     }
 }
