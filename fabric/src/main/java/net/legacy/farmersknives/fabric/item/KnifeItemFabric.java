@@ -6,10 +6,11 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import vectorwing.farmersdelight.common.item.KnifeItem;
 
-public class KnifeItemFabric extends Item {
+public class KnifeItemFabric extends KnifeItem {
 
-    public KnifeItemFabric(Properties properties) {
+    public KnifeItemFabric(Item.Properties properties) {
         super(properties);
     }
 

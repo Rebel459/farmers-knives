@@ -36,7 +36,7 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 
-    //modImplementation("maven.modrinth:farmers-delight-refabricated:$delight_refabricated_version")
+    modImplementation("maven.modrinth:farmers-delight-refabricated:$delight_refabricated_version")
 }
 
 processResources {
