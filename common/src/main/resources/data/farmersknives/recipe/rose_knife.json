@@ -1,15 +1,9 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": {
-    "item": "farmersdelight:golden_knife"
-  },
-  "addition": {
-    "item": "progression_reborn:rose_ingot"
-  },
+  "base": "farmersdelight:golden_knife",
+  "addition": "progression_reborn:rose_ingot",
   "result": {
     "id": "farmersknives:rose_knife"
   },
-  "template": {
-    "item": "progression_reborn:rose_upgrade_smithing_template"
-  }
+  "template": "progression_reborn:rose_upgrade_smithing_template"
 }

@@ -19,6 +19,9 @@
     ],
     "client": [
       "net.legacy.farmersknives.fabric.client.FarmersKnivesFabricClient"
+    ],
+    "fabric-datagen": [
+      "net.legacy.farmersknives.fabric.datagen.FKDataGenerator"
     ]
   },
   "mixins": [
@@ -26,7 +29,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.16.14",
-    "minecraft": ">=1.21 <=1.21.1",
+    "minecraft": "1.21.5",
     "java": ">=21",
     "architectury": ">=13.0.8",
     "fabric-api": "*"

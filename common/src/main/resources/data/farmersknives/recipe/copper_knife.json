@@ -5,12 +5,8 @@
     "s"
   ],
   "key": {
-    "m": {
-      "item": "minecraft:copper_ingot"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "m": "minecraft:copper_ingot",
+    "s": "minecraft:stick"
   },
   "result": {
     "id": "farmersknives:copper_knife"
