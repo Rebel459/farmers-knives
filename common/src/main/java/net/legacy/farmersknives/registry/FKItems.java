@@ -21,7 +21,7 @@ public class FKItems {
     public static final DeferredRegister<Item> END_REBORN_ITEMS = DeferredRegister.create(FarmersKnives.MOD_ID, Registries.ITEM);
 
     public static float knifeAttackDamage = 0.5F;
-    public static float knifeAttackSpeed = -1.8F;
+    public static float knifeAttackSpeed = -2F;
 
     public static final RegistrySupplier<Item> CREATIVE_TAB_KNIFE = ITEMS.register(
             "creative_tab_knife", () -> new Item(
