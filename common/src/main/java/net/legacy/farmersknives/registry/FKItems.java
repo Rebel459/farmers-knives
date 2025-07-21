@@ -342,6 +342,7 @@ public class FKItems {
                     "rose_knife", () -> FKPlatform.createKnifeItem(FKTiers.ROSE,
                             new Item.Properties()
                                     .stacksTo(1)
+                                    .fireResistant()
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
         }
